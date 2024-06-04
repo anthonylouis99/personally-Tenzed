@@ -1,0 +1,138 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Starting-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  background: linear-gradient(158deg, rgba(50,153,235,1) 12%, rgba(22,49,195,1) 43%, rgba(168,132,182,1) 64%, rgba(213,121,185,1) 100%);
+  background-size: 5000px;
+  background-repeat: no-repeat;
+  animation-name: shimmering-background;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+  
+}
+
+@keyframes shimmering-background{
+ 0% { background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
+
+
+.general-button{
+  height: 80px;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(128, 128, 128);
+  background-color: rgb(89, 248, 97);
+  color: rgb(251, 252, 253);
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+
+}
+
+.Starting-page>h1{
+  color: #FFFF;
+}
+.instructions{
+  color: #FFFF;
+}
+.level{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.level-one{
+  background:linear-gradient(158deg, rgb(50, 235, 90) 12%, rgb(79, 238, 140) 43%, rgb(107, 228, 212) 64%, rgb(144, 201, 235) 100%);
+
+}
+
+.Two-Buttons{
+  display: flex;
+  gap:100px;
+}
+
+.Level-Two{
+  background:linear-gradient(90deg, rgb(31, 34, 32) 12%, rgb(39, 41, 40) 43%, rgb(64, 66, 66) 64%, rgb(147, 149, 150) 100%);
+  color: #FFFF;
+}
+.Level-three{
+  background:linear-gradient(90deg, rgb(151, 231, 46) 12%, rgb(100, 231, 60) 43%, rgb(153, 226, 58) 64%, rgb(106, 179, 47) 100%);
+  color: #FFFF;
+}
+.dices-container{
+  display: grid;
+  grid-template-rows:1fr 1fr;
+  grid-template-columns:repeat(5,1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.dices{
+  background-color: rgb(250, 251, 252);
+  box-shadow: 2px 2px 2px rgb(148, 147, 147);
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  padding:10px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.four{
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.five{
+   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+ 
+}
+.mid{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.die{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+
+
+    
